@@ -1,4 +1,4 @@
-import type{ Phone, Expert } from '../types/index';
+import type { Phone, Expert } from '../types/index';
 
 // Функція для створення красивого посилання-заглушки з назвою телефону
 const getPhotoUrl = (text: string) => `https://placehold.co/400x400/eeeeee/31343c?text=${encodeURIComponent(text)}`;
@@ -30,6 +30,7 @@ export const INITIAL_EXPERTS: Expert[] = [
   { id: 't1', name: 'Викладач (Адмін)', isTeacher: true },
   ...Array.from({ length: 20 }, (_, i) => ({
     id: `e${i + 1}`,
-    name: `Експерт ${i + 1}`
+    name: `Експерт ${i + 1}`,
+    isTeacher: false
   }))
 ];
