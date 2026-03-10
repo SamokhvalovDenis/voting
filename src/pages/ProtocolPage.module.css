@@ -1,0 +1,90 @@
+.authWrapper {
+  max-width: 400px;
+  margin: 60px auto;
+  text-align: center;
+  padding: 40px;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.title { margin: 0 0 10px 0; font-size: 24px; }
+.desc { color: var(--text-muted); margin-bottom: 30px; }
+
+.input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-size: 16px;
+}
+
+.input:focus { outline: none; border-color: var(--danger); }
+
+.btnSubmit {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btnSubmit:disabled { opacity: 0.5; }
+
+/* Стилі самої таблиці */
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btnClose {
+  padding: 8px 16px;
+  background-color: transparent;
+  color: var(--danger);
+  border: 1px solid var(--danger);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.stats {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.th {
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+  background-color: #fbfbfd;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.tr { border-bottom: 1px solid var(--border); }
+.tr:last-child { border-bottom: none; }
+
+.td { padding: 16px; }
+.tdExpert { font-weight: 500; }
+.tdPriority1 { color: var(--success); font-weight: 600; }
+.tdDate { font-size: 0.9em; color: var(--text-muted); }
+.emptyRow { text-align: center; color: var(--text-muted); padding: 32px; }

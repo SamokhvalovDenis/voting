@@ -1,0 +1,76 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--card-bg, rgba(30, 41, 59, 0.8));
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid var(--card-border, rgba(255, 255, 255, 0.1));
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  color: var(--text-main, #f8fafc);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: var(--text-muted, #94a3b8);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.heuristicItem {
+  padding: 16px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid var(--card-border, rgba(255, 255, 255, 0.1));
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--text-main, #f8fafc);
+  font-weight: 400;
+}
+
+.heuristicItem:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.heuristicItemSelected {
+  border-color: var(--accent, #6366f1);
+  background: rgba(99, 102, 241, 0.15);
+  font-weight: 600;
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.1);
+}
+
+.btnSubmit {
+  width: 100%;
+  padding: 16px;
+  background: var(--accent-gradient, linear-gradient(135deg, #6366f1, #a855f7));
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btnSubmit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #334155;
+}
+
+.btnSubmit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.3);
+}

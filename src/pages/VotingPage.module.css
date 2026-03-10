@@ -1,0 +1,44 @@
+.title {
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.desc {
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.btnSubmit {
+  margin-top: 30px;
+  padding: 14px 28px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: var(--success);
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: opacity 0.2s;
+}
+
+.btnSubmit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btnSubmit:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.loading {
+  text-align: center;
+  color: var(--text-muted);
+  margin-top: 40px;
+}
